@@ -321,50 +321,6 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 <div style="margin-top:8px;text-align:center"><button onclick="showNologin()" style="background:none;border:1px dashed #6C5CE7;color:#6C5CE7;padding:10px 20px;border-radius:10px;font-size:12px;font-weight:600;cursor:pointer">🔀 프로토: 미로그인 유저 화면 보기</button></div>
 </div>
 <!-- Backfill 화면 (주문 0회 유저) -->
-<div class="result" id="backfill-w12">
-<div style="padding:20px 16px">
-<div style="font-size:22px;font-weight:800;line-height:1.4;margin-bottom:6px">민경님 근처 사람들은<br>지금 <span style="color:#2AC1BC">이걸</span> 시켜먹고 있어요!</div>
-<div style="font-size:14px;color:#888">첫 주문하고 나만의 먹을복을 확인해보세요</div>
-</div>
-<div style="display:inline-block;margin:0 16px 16px;padding:6px 12px;background:#F0FAFA;color:#2AC1BC;border-radius:20px;font-size:12px;font-weight:600">📍 수요일 저녁 · 강남구에서 많이 시킨</div>
-<div class="brand-acc open" onclick="this.classList.toggle('open')"><div class="brand-hdr"><div class="brand-ic">🍗</div><div class="brand-bd"><div class="brand-nm">교촌치킨 강남점<span style="background:#FF6B00;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:700;margin-left:6px">이 동네 1위</span></div><div class="brand-sub">⭐ 4.8 · 30~40분 · 배달비 무료</div></div><span class="brand-chev">▼</span></div>
-<div class="brand-detail">
-<div class="branch"><span class="branch-nm">교촌치킨 강남역점</span><span class="branch-ds">30분</span><button class="branch-btn">주문</button></div>
-<div class="branch"><span class="branch-nm">교촌치킨 역삼점</span><span class="branch-ds">35분</span><button class="branch-btn">주문</button></div>
-</div></div>
-<div class="brand-acc open" onclick="this.classList.toggle('open')"><div class="brand-hdr"><div class="brand-ic">🌶️</div><div class="brand-bd"><div class="brand-nm">엽기떡볶이 강남점<span style="background:#FFE8E8;color:#E53935;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:700;margin-left:6px">지금 주문 폭주 🔥</span></div><div class="brand-sub">⭐ 4.7 · 25~35분 · 배달비 무료</div></div><span class="brand-chev">▼</span></div>
-<div class="brand-detail">
-<div class="branch"><span class="branch-nm">엽기떡볶이 강남점</span><span class="branch-ds">25분</span><button class="branch-btn">주문</button></div>
-<div class="branch"><span class="branch-nm">엽기떡볶이 역삼점</span><span class="branch-ds">30분</span><button class="branch-btn">주문</button></div>
-</div></div>
-<div class="brand-acc open" onclick="this.classList.toggle('open')"><div class="brand-hdr"><div class="brand-ic">🍜</div><div class="brand-bd"><div class="brand-nm">마라탕후루 강남점</div><div class="brand-sub">⭐ 4.5 · 30~40분</div></div><span class="brand-chev">▼</span></div>
-<div class="brand-detail">
-<div class="branch"><span class="branch-nm">마라탕후루 서초점</span><span class="branch-ds">30분</span><button class="branch-btn">주문</button></div>
-</div></div>
-<div style="margin:16px;padding:16px;background:#2AC1BC;border-radius:12px;text-align:center;color:#fff;font-size:16px;font-weight:700;cursor:pointer">첫 주문하고 내 먹을복 확인하기 →</div>
-<div style="margin-top:12px;text-align:center"><button onclick="hideBackfill()" style="background:none;border:1px dashed #888;color:#888;padding:8px 16px;border-radius:10px;font-size:12px;cursor:pointer">← 정상 화면으로 돌아가기</button></div>
-</div>
-<!-- 미로그인 Backfill 화면 -->
-<div class="result" id="backfill-nologin">
-<div class="bf-login">
-<div class="bf-emoji">🎰</div>
-<div class="bf-title">나의 먹을복 유형은?</div>
-<div class="bf-desc">로그인하면 주문 내역을 분석해서<br>나만의 먹을복 유형을 알려드려요!</div>
-<button class="bf-login-btn" onclick="alert('로그인 페이지로 이동')">로그인하고 먹을복 뽑기</button>
-</div>
-<div class="bf-popular">
-<div class="bp-title">🔥 지금 우리 동네 인기 먹을복</div>
-<div class="bp-item"><span class="bp-rank">1</span><span class="bp-name">🌶️ 매운맛 먹을복</span><span class="bp-count">강남구 42%</span></div>
-<div class="bp-item"><span class="bp-rank">2</span><span class="bp-name">🧂 짠맛 먹을복</span><span class="bp-count">강남구 28%</span></div>
-<div class="bp-item"><span class="bp-rank">3</span><span class="bp-name">🍰 단맛 먹을복</span><span class="bp-count">강남구 18%</span></div>
-<div class="bp-item"><span class="bp-rank">4</span><span class="bp-name">🥗 건강 먹을복</span><span class="bp-count">강남구 12%</span></div>
-</div>
-<div style="padding:16px"><div style="background:#F9FAFB;border-radius:14px;padding:16px;text-align:center">
-<div style="font-size:14px;font-weight:700;margin-bottom:8px">📊 먹을복 뽑기란?</div>
-<div style="font-size:13px;color:#555;line-height:1.6">최근 12주 주문 내역을 분석해서<br>나의 맛 취향 유형을 알려주고<br>딱 맞는 가게를 추천해드려요!</div>
-</div></div>
-<div style="margin-top:12px;text-align:center"><button onclick="hideNologin()" style="background:none;border:1px dashed #888;color:#888;padding:8px 16px;border-radius:10px;font-size:12px;cursor:pointer">← 정상 화면으로 돌아가기</button></div>
-</div>
 <div class="result show" id="result-w12">
 <div style="padding:8px 16px;display:flex;gap:6px;flex-wrap:wrap">
 <button onclick="showBackfill()" style="background:none;border:1px dashed #FF6B00;color:#FF6B00;padding:6px 12px;border-radius:10px;font-size:11px;font-weight:600;cursor:pointer">🔀 주문 0회 Backfill</button>
@@ -446,11 +402,11 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 <div class="brand-detail">
 <div class="branch"><span class="branch-nm">본죽 서초점</span><span class="branch-ds">20분</span><button class="branch-btn">주문</button></div>
 </div></div></div>
-</div>
 <!-- 친구에게 먹을복 공유하기 (W1~2) -->
 <div style="margin:0 16px 12px;padding:12px 14px;background:#F0FAFA;border-radius:12px;display:flex;align-items:center;justify-content:space-between">
 <div style="display:flex;align-items:center;gap:8px"><span style="font-size:18px">🎁</span><span style="font-size:13px;font-weight:600;color:#1a1a1a">친구에게 먹을복 공유하기</span></div>
 <div style="display:flex;gap:8px"><span style="width:28px;height:28px;border-radius:50%;background:#FEE500;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer">💬</span><span style="width:28px;height:28px;border-radius:50%;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer">🔗</span></div>
+</div>
 </div></div>
 <script>
 var memos=JSON.parse(localStorage.getItem('mukbok-memos')||'[]');
