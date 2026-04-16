@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>먹을복 페스타 기획서 - 템플릿</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#1a1a1a;color:#fff}
+.spec-wrap{display:flex;gap:0;max-width:1400px;margin:0 auto}
+/* 헤더 */
+.spec-header{background:#2AC1BC;padding:16px 24px;font-size:20px;font-weight:800;color:#fff;text-align:center;letter-spacing:1px}
+.spec-sub-header{display:flex;background:#333}
+.spec-sub-header div{flex:1;padding:12px 16px;text-align:center;font-size:14px;font-weight:700;border-right:1px solid #444}
+.spec-sub-header div:last-child{border-right:none}
+.col-left{background:#2AC1BC;color:#fff}
+.col-mid{background:#555;color:#fff}
+.col-right{background:#FF6B00;color:#fff}
+/* 3컬럼 */
+.spec-row{display:flex;border-bottom:1px solid #333;min-height:120px}
+.spec-col-1{width:260px;flex-shrink:0;padding:20px;display:flex;align-items:center;justify-content:center;border-right:1px solid #333}
+.spec-col-2{flex:1;padding:20px;border-right:1px solid #333}
+.spec-col-3{width:340px;flex-shrink:0;padding:20px}
+/* 섹션 카드 */
+.section-card{background:#2a2a2a;border:2px solid #444;border-radius:12px;padding:20px;text-align:center;width:100%}
+.section-card .s-title{font-size:16px;font-weight:800;margin-bottom:4px}
+.section-card .s-sub{font-size:11px;color:#888}
+.section-num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:#2AC1BC;color:#fff;border-radius:50%;font-size:12px;font-weight:700;margin-top:8px}
+/* 화살표 */
+.arrow{text-align:center;padding:6px 0;color:#2AC1BC;font-size:18px}
+/* 설명 영역 */
+.desc-title{font-size:14px;font-weight:700;color:#2AC1BC;margin-bottom:8px}
+.desc-text{font-size:13px;color:#ccc;line-height:1.7}
+.desc-text li{margin-left:16px;margin-bottom:4px;list-style:disc}
+.desc-placeholder{font-size:13px;color:#666;font-style:italic;line-height:1.7}
+/* 필요사항 */
+.req-item{background:#2a2a2a;border-radius:8px;padding:12px;margin-bottom:8px}
+.req-item .req-label{font-size:11px;color:#FF6B00;font-weight:700;margin-bottom:4px}
+.req-item .req-text{font-size:12px;color:#ccc;line-height:1.5}
+.req-placeholder{font-size:12px;color:#666;font-style:italic}
+/* 참고 이미지 영역 */
+.ref-img{background:#2a2a2a;border-radius:8px;padding:16px;text-align:center;margin-top:12px}
+.ref-img .placeholder{width:100%;height:80px;background:#333;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#666;font-size:12px}
+/* 태그 */
+.tag{display:inline-block;padding:3px 8px;border-radius:10px;font-size:10px;font-weight:600;margin-right:4px;margin-bottom:4px}
+.tag-dev{background:#FF6B00;color:#fff}
+.tag-design{background:#6C5CE7;color:#fff}
+.tag-data{background:#00B894;color:#fff}
+.tag-biz{background:#E17055;color:#fff}
+</style>
+</head>
+<body>
+
+<div class="spec-header">🎉 먹을복 페스타 기획서</div>
+<div class="spec-sub-header">
+<div class="col-left">📱 전체 페이지 구성</div>
+<div class="col-mid">📝 화면/영역 설명</div>
+<div class="col-right">⚙️ 개발 핵심 필요 사항</div>
+</div>
+
+<!-- ===== 섹션 1 ===== -->
+<div class="spec-row">
+<div class="spec-col-1">
+<div>
+<div class="section-card">
+<div class="s-title">KV 영역</div>
+<div class="s-sub">키비주얼</div>
+</div>
+<div class="section-num">1</div>
+<div class="arrow">↓</div>
+</div>
+</div>
+<div class="spec-col-2">
+<div class="desc-title">• 기획 의도</div>
+<div class="desc-text">
+<li>여기에 기획 의도를 작성하세요</li>
+<li>예: KV 영역을 최소화하여 ATF 영역에 메인 할인 노출이 보여지도록 함</li>
+</div>
+<div class="ref-img">
+<div class="placeholder">📷 참고 이미지를 여기에 붙여넣기</div>
+</div>
+</div>
+<div class="spec-col-3">
+<div class="req-item">
+<div class="req-label">개발 필요사항</div>
+<div class="req-text">
+<li>여기에 개발 요청사항을 작성하세요</li>
+</div>
+</div>
+<div>
+<span class="tag tag-dev">FE</span>
+<span class="tag tag-design">디자인</span>
+<span class="tag tag-data">데이터</span>
+<span class="tag tag-biz">사업</span>
+</div>
+</div>
+</div>
+
+<!-- ===== 섹션 2 ===== -->
+<div class="spec-row">
+<div class="spec-col-1">
+<div>
+<div class="section-card">
+<div class="s-title">사전알림 + 쿠폰팩</div>
+<div class="s-sub">CTA 영역</div>
+</div>
+<div class="section-num">2</div>
+<div class="arrow">↓</div>
+</div>
+</div>
+<div class="spec-col-2">
+<div class="desc-title">• 기획 의도</div>
+<div class="desc-placeholder">기획 의도를 입력하세요...</div>
+<div style="margin-top:12px">
+<div class="desc-title">• 상세 스펙</div>
+<div class="desc-placeholder">
+<li>인터랙션, 조건, 예외 케이스 등</li>
+</div>
+</div>
+</div>
+<div class="spec-col-3">
+<div class="req-item">
+<div class="req-label">개발 필요사항</div>
+<div class="req-placeholder">개발 요청사항을 입력하세요...</div>
+</div>
+<div class="req-item">
+<div class="req-label">데이터 필요사항</div>
+<div class="req-placeholder">필요한 데이터/API를 입력하세요...</div>
+</div>
+</div>
+</div>
+
+<!-- ===== 빈 섹션 템플릿 (복사용) ===== -->
+<div class="spec-row">
+<div class="spec-col-1">
+<div>
+<div class="section-card">
+<div class="s-title">섹션명 입력</div>
+<div class="s-sub">설명</div>
+</div>
+<div class="section-num">3</div>
+<div class="arrow">↓</div>
+</div>
+</div>
+<div class="spec-col-2">
+<div class="desc-title">• 기획 의도</div>
+<div class="desc-placeholder">기획 의도를 입력하세요...</div>
+<div style="margin-top:12px">
+<div class="desc-title">• 상세 스펙</div>
+<div class="desc-placeholder">상세 스펙을 입력하세요...</div>
+</div>
+<div class="ref-img">
+<div class="placeholder">📷 참고 이미지를 여기에 붙여넣기</div>
+</div>
+</div>
+<div class="spec-col-3">
+<div class="req-item">
+<div class="req-label">개발 필요사항</div>
+<div class="req-placeholder">개발 요청사항을 입력하세요...</div>
+</div>
+<div class="req-item">
+<div class="req-label">데이터 필요사항</div>
+<div class="req-placeholder">필요한 데이터/API를 입력하세요...</div>
+</div>
+<div class="req-item">
+<div class="req-label">디자인 요청</div>
+<div class="req-placeholder">디자인 요청사항을 입력하세요...</div>
+</div>
+<div>
+<span class="tag tag-dev">FE</span>
+<span class="tag tag-design">디자인</span>
+<span class="tag tag-data">데이터</span>
+<span class="tag tag-biz">사업</span>
+</div>
+</div>
+</div>
+
+<!-- 추가 섹션은 위 블록을 복사하여 사용 -->
+
+</body>
+</html>
