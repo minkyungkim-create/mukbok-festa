@@ -840,8 +840,8 @@ function switchBrand(idx,el){
   document.querySelectorAll('.cpn-brand-ic').forEach(function(ic,i){ic.classList.toggle('active',i===idx);});
 }
 // Backfill 전환
-function showBackfill(){window.location.href='section1-w12-backfill-noorder.html';}
-function showNologin(){window.location.href='section1-w12-backfill-nologin.html';}
+function showBackfill(){window.location.href='sections/section1-w12-backfill-noorder.html';}
+function showNologin(){window.location.href='sections/section1-w12-backfill-nologin.html';}
 // 맛 탭 전환
 function switchTaste(id,el){
   ['spicy','salty','sweet','healthy'].forEach(function(k){var p=document.getElementById('tp-'+k);if(p)p.style.display=k===id?'block':'none';});
