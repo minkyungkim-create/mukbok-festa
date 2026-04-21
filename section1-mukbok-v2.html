@@ -435,6 +435,8 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 <div class="ttb" onclick="switchTaste('salty',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🧂 짠맛</div>
 <div class="ttb" onclick="switchTaste('sweet',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🍰 단맛</div>
 <div class="ttb" onclick="switchTaste('healthy',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🥗 건강한맛</div>
+<div class="ttb" onclick="switchTaste('mart',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🛒 장보기쇼핑</div>
+<div class="ttb" onclick="switchTaste('pickup',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🏪 픽업</div>
 </div>
 <!-- 매운맛 -->
 <div id="tp-spicy" class="tp" style="display:block">
@@ -470,6 +472,58 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 <div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🥗</div><div style="flex:1"><div style="font-size:15px;font-weight:700">서브웨이</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 15~25분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
 <div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍲</div><div style="flex:1"><div style="font-size:15px;font-weight:700">본죽</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 20~30분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
 </div></div>
+<!-- 장보기쇼핑 -->
+<div id="tp-mart" class="tp" style="display:none">
+<div style="padding:16px 16px 4px"><div style="font-size:18px;font-weight:800">마트·편의점 인기상품 할인중</div><div style="font-size:13px;color:#888;margin-top:4px">쓰고 또 쓰는 쿠폰까지</div></div>
+<!-- B마트 -->
+<div style="margin:12px 16px;background:#fff;border:1px solid #f0f0f0;border-radius:16px;overflow:hidden">
+<div style="padding:14px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f0f0"><div style="width:40px;height:40px;border-radius:10px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:18px">🅱️</div><div><div style="font-size:15px;font-weight:700">B마트 ›</div><div style="font-size:12px;color:#888">한돈 최대 50% 할인 기획전</div></div></div>
+<div style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between;background:#F9FAFB"><div><div style="font-size:11px;color:#888">B마트</div><div style="font-size:15px;font-weight:800">최대 <span style="color:#5B2EFF">8,000원</span> 할인</div><div style="font-size:11px;color:#aaa">16,000원부터 사용 가능</div></div><div style="width:36px;height:36px;background:#5B2EFF;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer">⬇</div></div>
+<div style="padding:12px 16px;display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px;position:relative">🥩<span style="position:absolute;top:4px;left:4px;background:#E53935;color:#fff;font-size:9px;padding:2px 5px;border-radius:4px;font-weight:700">행사상품</span></div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">냉장 뒷다리살<br>찌개용 300g</div><div style="font-size:12px;margin-top:2px"><span style="color:#E53935;font-weight:700">50%</span> <b>3,990원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px;position:relative">🍖<span style="position:absolute;top:4px;left:4px;background:#E53935;color:#fff;font-size:9px;padding:2px 5px;border-radius:4px;font-weight:700">행사상품</span></div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">[배민이지] 한돈<br>다짐육 150g</div><div style="font-size:12px;margin-top:2px"><b>2,990원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🥩</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">목우촌 한돈<br>뒷다리살 600g</div><div style="font-size:12px;margin-top:2px"><b>5,990원</b></div></div>
+</div>
+<div style="padding:0 16px 14px"><button style="width:100%;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;font-size:13px;font-weight:600;color:#555;cursor:pointer">B마트 기획전 ›</button></div>
+</div>
+<!-- CU -->
+<div style="margin:12px 16px;background:#fff;border:1px solid #f0f0f0;border-radius:16px;overflow:hidden">
+<div style="padding:14px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f0f0"><div style="width:40px;height:40px;border-radius:10px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:18px">🏪</div><div><div style="font-size:15px;font-weight:700">CU ›</div><div style="font-size:12px;color:#888">최대 33% 할인 가벼운 한 끼 기획전</div></div></div>
+<div style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between;background:#F9FAFB"><div><div style="font-size:11px;color:#888">CU</div><div style="font-size:15px;font-weight:800">최대 <span style="color:#5B2EFF">7,980원</span> 할인</div><div style="font-size:11px;color:#aaa">7,980원부터 사용 가능</div></div><div style="width:36px;height:36px;background:#5B2EFF;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer">⬇</div></div>
+<div style="padding:12px 16px;display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px;position:relative">🥣<span style="position:absolute;top:4px;left:4px;background:#E53935;color:#fff;font-size:9px;padding:2px 5px;border-radius:4px;font-weight:700">행사상품</span></div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">켈로그 아몬드컵<br>시리얼</div><div style="font-size:12px;margin-top:2px"><span style="color:#E53935;font-weight:700">33%</span> <b>3,800원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px;position:relative">🍊<span style="position:absolute;top:4px;left:4px;background:#E53935;color:#fff;font-size:9px;padding:2px 5px;border-radius:4px;font-weight:700">행사상품</span></div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">동서 오레오오즈컵<br>30g</div><div style="font-size:12px;margin-top:2px"><b>1,900원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🥜</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">HEYROO 시리얼<br>득템</div><div style="font-size:12px;margin-top:2px"><b>3,200원</b></div></div>
+</div>
+<div style="padding:0 16px 14px"><button style="width:100%;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;font-size:13px;font-weight:600;color:#555;cursor:pointer">CU 기획전 ›</button></div>
+</div>
+</div>
+<!-- 픽업 -->
+<div id="tp-pickup" class="tp" style="display:none">
+<div style="padding:16px 16px 4px"><div style="font-size:18px;font-weight:800">픽업 인기 메뉴</div><div style="font-size:13px;color:#888;margin-top:4px">직접 가져가면 더 저렴하게</div></div>
+<!-- 카페 픽업 -->
+<div style="margin:12px 16px;background:#fff;border:1px solid #f0f0f0;border-radius:16px;overflow:hidden">
+<div style="padding:14px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f0f0"><div style="width:40px;height:40px;border-radius:10px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:18px">☕</div><div><div style="font-size:15px;font-weight:700">카페 픽업 ›</div><div style="font-size:12px;color:#888">최대 40% 할인 아이스 음료 특가</div></div></div>
+<div style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between;background:#F9FAFB"><div><div style="font-size:11px;color:#888">카페 픽업</div><div style="font-size:15px;font-weight:800">최대 <span style="color:#5B2EFF">3,000원</span> 할인</div><div style="font-size:11px;color:#aaa">5,000원부터 사용 가능</div></div><div style="width:36px;height:36px;background:#5B2EFF;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer">⬇</div></div>
+<div style="padding:12px 16px;display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">☕</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">메가커피<br>아이스 아메리카노</div><div style="font-size:12px;margin-top:2px"><span style="color:#E53935;font-weight:700">40%</span> <b>1,500원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🧋</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">컴포즈커피<br>아이스라떼</div><div style="font-size:12px;margin-top:2px"><span style="color:#E53935;font-weight:700">30%</span> <b>2,100원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🥤</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">빽다방<br>아이스 원조커피</div><div style="font-size:12px;margin-top:2px"><b>2,000원</b></div></div>
+</div>
+<div style="padding:0 16px 14px"><button style="width:100%;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;font-size:13px;font-weight:600;color:#555;cursor:pointer">카페 픽업 더보기 ›</button></div>
+</div>
+<!-- 치킨 픽업 -->
+<div style="margin:12px 16px;background:#fff;border:1px solid #f0f0f0;border-radius:16px;overflow:hidden">
+<div style="padding:14px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f0f0"><div style="width:40px;height:40px;border-radius:10px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:18px">🍗</div><div><div style="font-size:15px;font-weight:700">치킨 픽업 ›</div><div style="font-size:12px;color:#888">픽업하면 최대 5,000원 할인</div></div></div>
+<div style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between;background:#F9FAFB"><div><div style="font-size:11px;color:#888">치킨 픽업</div><div style="font-size:15px;font-weight:800">최대 <span style="color:#5B2EFF">5,000원</span> 할인</div><div style="font-size:11px;color:#aaa">15,000원부터 사용 가능</div></div><div style="width:36px;height:36px;background:#5B2EFF;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer">⬇</div></div>
+<div style="padding:12px 16px;display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🍗</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">교촌치킨<br>허니콤보</div><div style="font-size:12px;margin-top:2px"><span style="color:#E53935;font-weight:700">25%</span> <b>14,250원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🍗</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">BBQ<br>황금올리브</div><div style="font-size:12px;margin-top:2px"><span style="color:#E53935;font-weight:700">20%</span> <b>16,000원</b></div></div>
+<div style="min-width:120px;flex-shrink:0"><div style="height:90px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:32px">🍗</div><div style="font-size:11px;color:#555;margin-top:6px;line-height:1.3">굽네치킨<br>고추바사삭</div><div style="font-size:12px;margin-top:2px"><b>19,000원</b></div></div>
+</div>
+<div style="padding:0 16px 14px"><button style="width:100%;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;font-size:13px;font-weight:600;color:#555;cursor:pointer">치킨 픽업 더보기 ›</button></div>
+</div>
+</div>
 <!-- 친구에게 먹을복 공유하기 (W1~2) -->
 <div style="margin:0 16px 12px;padding:12px 14px;background:#F0FAFA;border-radius:12px;display:flex;align-items:center;justify-content:space-between">
 <div style="display:flex;align-items:center;gap:8px"><span style="font-size:18px">🎁</span><span style="font-size:13px;font-weight:600;color:#1a1a1a">친구에게 먹을복 공유하기</span></div>
@@ -781,7 +835,7 @@ function showBackfill(){window.location.href='sections/section1-w12-backfill-noo
 function showNologin(){window.location.href='sections/section1-w12-backfill-nologin.html';}
 // 맛 탭 전환
 function switchTaste(id,el){
-  ['spicy','salty','sweet','healthy'].forEach(function(k){var p=document.getElementById('tp-'+k);if(p)p.style.display=k===id?'block':'none';});
+  ['spicy','salty','sweet','healthy','mart','pickup'].forEach(function(k){var p=document.getElementById('tp-'+k);if(p)p.style.display=k===id?'block':'none';});
   el.parentNode.querySelectorAll('.ttb').forEach(function(t){t.style.background='#fff';t.style.color='#888';t.style.borderColor='#eee';});
   el.style.background='#2AC1BC';el.style.color='#fff';el.style.borderColor='#2AC1BC';
 }
