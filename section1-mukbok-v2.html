@@ -429,109 +429,46 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 </div>
 <div style="font-size:11px;color:#aaa;margin-top:10px;cursor:pointer">유의사항 ∨</div>
 </div>
-<!-- 쿠폰 섹션: 이벤트메이커 스타일 -->
-<div class="cpn-sec">
-<div class="cpn-sec-t">🌶️ 매운맛 끝판왕의 브랜드 특가</div>
-<div class="cpn-sec-sub">최대 <b style="color:#5B2EFF;font-size:15px">10,000원</b> 할인</div>
-<!-- 쿠폰팩 다운로드 -->
-<div class="cpn-pack" onclick="this.classList.add('downloaded')">
-<div class="cpn-pack-left">
-<div class="cpn-pack-icons">🌶️🍜🔥</div>
-<div><div class="cpn-pack-label">5개 브랜드 특가 할인중</div>
-<div class="cpn-pack-amt">최대 <b>38,000원</b> 쿠폰팩</div></div>
-</div>
-<div class="cpn-pack-dl">⬇</div>
-</div>
-<!-- 브랜드 가로 스크롤 -->
-<div class="cpn-brands">
-<div class="cpn-brand" onclick="switchBrand(0,this)"><div class="cpn-brand-ic active">🌶️</div><span>엽기떡볶이</span></div>
-<div class="cpn-brand" onclick="switchBrand(1,this)"><div class="cpn-brand-ic">🍜</div><span>신전떡볶이</span></div>
-<div class="cpn-brand" onclick="switchBrand(2,this)"><div class="cpn-brand-ic">🔥</div><span>마라탕후루</span></div>
-<div class="cpn-brand" onclick="switchBrand(3,this)"><div class="cpn-brand-ic">🍗</div><span>교촌치킨</span></div>
-<div class="cpn-brand" onclick="switchBrand(4,this)"><div class="cpn-brand-ic">🍕</div><span>도미노피자</span></div>
-</div>
-</div>
-<!-- 브랜드별 쿠폰+가게 패널 -->
-<div class="bp" id="bp-0">
-<div class="bp-hero">
-<div class="bp-hero-bg">🌶️</div>
-<div class="bp-hero-info"><div class="bp-hero-brand">엽기떡볶이</div><div class="bp-hero-deal">최대 <b>3,000원</b> 할인</div></div>
-<div class="bp-hero-dl" onclick="event.stopPropagation()">⬇<span class="bp-dl-badge">2</span></div>
-</div>
-<div class="bp-hero-cond">15,000원부터 사용 가능</div>
-<div class="bp-near-t">가까운 가게가 있어요 <span class="bp-near-more">전체보기 ›</span></div>
-<div class="bp-shop"><div class="bp-shop-img">🌶️</div><div class="bp-shop-bd"><div class="bp-shop-nm">엽기떡볶이 강남점</div><div class="bp-shop-meta">⭐ 4.7 (2,341) · 최소주문 12,000원</div><div class="bp-shop-meta">🛵 25~35분 · <b style="color:#2AC1BC">무료배달</b></div><div class="bp-shop-cpn">⚡ 3,000원 즉시할인</div></div></div>
-<div class="bp-shop"><div class="bp-shop-img">🌶️</div><div class="bp-shop-bd"><div class="bp-shop-nm">엽기떡볶이 역삼점</div><div class="bp-shop-meta">⭐ 4.5 (1,892) · 최소주문 12,000원</div><div class="bp-shop-meta">🛵 30~40분 · 1,000원~2,300원</div><div class="bp-shop-cpn">⚡ 15% 즉시할인</div></div></div>
-</div>
-<div class="bp" id="bp-1" style="display:none">
-<div class="bp-hero">
-<div class="bp-hero-bg">🍜</div>
-<div class="bp-hero-info"><div class="bp-hero-brand">신전떡볶이</div><div class="bp-hero-deal">최대 <b>2,000원</b> 할인</div></div>
-<div class="bp-hero-dl">⬇<span class="bp-dl-badge">1</span></div>
-</div>
-<div class="bp-hero-cond">10,000원부터 사용 가능</div>
-<div class="bp-near-t">가까운 가게가 있어요 <span class="bp-near-more">전체보기 ›</span></div>
-<div class="bp-shop"><div class="bp-shop-img">🍜</div><div class="bp-shop-bd"><div class="bp-shop-nm">신전떡볶이 역삼점</div><div class="bp-shop-meta">⭐ 4.5 (1,567) · 최소주문 10,000원</div><div class="bp-shop-meta">🛵 20~30분 · 무료배달</div><div class="bp-shop-cpn">⚡ 2,000원 즉시할인</div></div></div>
-</div>
-<div class="bp" id="bp-2" style="display:none">
-<div class="bp-hero">
-<div class="bp-hero-bg">🔥</div>
-<div class="bp-hero-info"><div class="bp-hero-brand">마라탕후루</div><div class="bp-hero-deal">최대 <b>4,000원</b> 할인</div></div>
-<div class="bp-hero-dl">⬇<span class="bp-dl-badge">2</span></div>
-</div>
-<div class="bp-hero-cond">15,000원부터 사용 가능</div>
-<div class="bp-near-t">가까운 가게가 있어요 <span class="bp-near-more">전체보기 ›</span></div>
-<div class="bp-shop"><div class="bp-shop-img">🔥</div><div class="bp-shop-bd"><div class="bp-shop-nm">마라탕후루 서초점</div><div class="bp-shop-meta">⭐ 4.5 (987) · 최소주문 15,000원</div><div class="bp-shop-meta">🛵 30~40분 · 1,500원</div><div class="bp-shop-cpn">⚡ 첫 주문 20% 할인</div></div></div>
-</div>
-<div class="bp" id="bp-3" style="display:none">
-<div class="bp-hero">
-<div class="bp-hero-bg">🍗</div>
-<div class="bp-hero-info"><div class="bp-hero-brand">교촌치킨</div><div class="bp-hero-deal">최대 <b>2,000원</b> 할인</div></div>
-<div class="bp-hero-dl">⬇<span class="bp-dl-badge">1</span></div>
-</div>
-<div class="bp-hero-cond">16,000원부터 사용 가능</div>
-<div class="bp-near-t">가까운 가게가 있어요 <span class="bp-near-more">전체보기 ›</span></div>
-<div class="bp-shop"><div class="bp-shop-img">🍗</div><div class="bp-shop-bd"><div class="bp-shop-nm">교촌치킨 강남역점</div><div class="bp-shop-meta">⭐ 4.8 (3,567) · 최소주문 16,000원</div><div class="bp-shop-meta">🛵 30~40분 · 무료배달</div><div class="bp-shop-cpn">⚡ 2,000원 즉시할인</div></div></div>
-</div>
-<div class="bp" id="bp-4" style="display:none">
-<div class="bp-hero">
-<div class="bp-hero-bg">🍕</div>
-<div class="bp-hero-info"><div class="bp-hero-brand">도미노피자</div><div class="bp-hero-deal">최대 <b>5,000원</b> 할인</div></div>
-<div class="bp-hero-dl">⬇<span class="bp-dl-badge">2</span></div>
-</div>
-<div class="bp-hero-cond">18,000원부터 사용 가능</div>
-<div class="bp-near-t">가까운 가게가 있어요 <span class="bp-near-more">전체보기 ›</span></div>
-<div class="bp-shop"><div class="bp-shop-img">🍕</div><div class="bp-shop-bd"><div class="bp-shop-nm">도미노피자 서초점</div><div class="bp-shop-meta">⭐ 4.6 (2,890) · 최소주문 18,000원</div><div class="bp-shop-meta">🛵 25~35분 · 무료배달</div><div class="bp-shop-cpn">⚡ 5,000원 즉시할인</div></div></div>
-</div>
-<!-- 접힌 상태 -->
-<div class="rc-mini" id="rc-mini" style="display:none" onclick="unfoldResult()">
-<span class="rc-mini-icon">🍜</span>
-<span class="rc-mini-text">나의 먹을복: <b>🔥 매운맛을 즐길 줄 아는 복</b></span>
-<span class="rc-mini-arrow">∨ 펼치기</span>
-</div>
-</div>
-<!-- 다른 맛도 구경해보세요 -->
-<div style="padding:20px 16px 8px"><div style="font-size:18px;font-weight:800">다른 맛도 구경해보세요 👀</div><div style="font-size:13px;color:#888;margin-top:4px">매운맛 말고 이런 맛은 어때요?</div></div>
-<div class="tt" style="display:flex;gap:6px;padding:8px 16px 0;overflow-x:auto;-webkit-overflow-scrolling:touch">
-<div class="ttb on" onclick="switchTaste('salty',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #2AC1BC;background:#2AC1BC;cursor:pointer;white-space:nowrap;color:#fff">🧂 짠맛</div>
+<!-- 맛별 가게 추천 -->
+<div style="padding:16px 16px 0;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+<div class="ttb" onclick="switchTaste('spicy',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #2AC1BC;background:#2AC1BC;cursor:pointer;white-space:nowrap;color:#fff;position:relative">🌶️ 매운맛<span style="position:absolute;top:-6px;right:-4px;font-size:9px;background:#FF6B00;color:#fff;padding:1px 4px;border-radius:6px;font-weight:700">MY</span></div>
+<div class="ttb" onclick="switchTaste('salty',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🧂 짠맛</div>
 <div class="ttb" onclick="switchTaste('sweet',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🍰 단맛</div>
 <div class="ttb" onclick="switchTaste('healthy',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🥗 건강한맛</div>
 </div>
-<div id="tp-salty" class="tp" style="display:block">
-<div style="padding:16px 16px 8px;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:space-between"><div><em style="color:#2AC1BC;font-style:normal">짠맛</em> 당길 때 이런 가게 어때요?</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
-<div style="padding:0 16px 16px">
-<div class="bp-shop"><div class="bp-shop-img">🍗</div><div class="bp-shop-bd"><div class="bp-shop-nm">교촌치킨 강남역점</div><div class="bp-shop-meta">⭐ 4.8 (3,567) · 최소주문 16,000원</div><div class="bp-shop-meta">🛵 30~40분 · <b style="color:#2AC1BC">무료배달</b></div><div class="bp-shop-cpn">⚡ 2,000원 즉시할인</div></div></div>
-<div class="bp-shop"><div class="bp-shop-img">🍕</div><div class="bp-shop-bd"><div class="bp-shop-nm">도미노피자 서초점</div><div class="bp-shop-meta">⭐ 4.6 (2,890) · 최소주문 18,000원</div><div class="bp-shop-meta">🛵 25~35분 · 무료배달</div><div class="bp-shop-cpn">⚡ 5,000원 즉시할인</div></div></div>
+<!-- 매운맛 -->
+<div id="tp-spicy" class="tp" style="display:block">
+<div style="padding:16px 16px 4px;display:flex;align-items:center;justify-content:space-between"><div style="font-size:16px;font-weight:700"><span style="color:#2AC1BC">매운맛</span> 좋아하는 당신을 위한 가게</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
+<div style="padding:4px 16px 8px;display:flex;align-items:center;justify-content:space-between"><span style="font-size:12px;color:#aaa">내 주변 매운맛 가게 4곳</span><button style="background:none;border:1px solid #ddd;border-radius:16px;padding:4px 12px;font-size:11px;color:#888;cursor:pointer">🔄 새로고침</button></div>
+<div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🌶️</div><div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:15px;font-weight:700">엽기떡볶이</span><span style="font-size:10px;background:#FFE8E8;color:#E53935;padding:2px 6px;border-radius:4px;font-weight:700">3,000원 할인</span></div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 25~35분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍜</div><div style="flex:1"><div style="font-size:15px;font-weight:700">신전떡볶이</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 20~30분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🔥</div><div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:15px;font-weight:700">마라탕후루</span><span style="font-size:10px;background:#FFE8E8;color:#E53935;padding:2px 6px;border-radius:4px;font-weight:700">첫 주문 20%</span></div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 30~40분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍲</div><div style="flex:1"><div style="font-size:15px;font-weight:700">쫄볶이네</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 25~35분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
 </div></div>
+<!-- 짠맛 -->
+<div id="tp-salty" class="tp" style="display:none">
+<div style="padding:16px 16px 4px;display:flex;align-items:center;justify-content:space-between"><div style="font-size:16px;font-weight:700"><span style="color:#2AC1BC">짠맛</span> 당길 때 이런 가게 어때요?</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
+<div style="padding:4px 16px 8px;display:flex;align-items:center;justify-content:space-between"><span style="font-size:12px;color:#aaa">내 주변 짠맛 가게 2곳</span><button style="background:none;border:1px solid #ddd;border-radius:16px;padding:4px 12px;font-size:11px;color:#888;cursor:pointer">🔄 새로고침</button></div>
+<div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍗</div><div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:15px;font-weight:700">교촌치킨</span><span style="font-size:10px;background:#FFE8E8;color:#E53935;padding:2px 6px;border-radius:4px;font-weight:700">2,000원 할인</span></div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 30~40분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍕</div><div style="flex:1"><div style="font-size:15px;font-weight:700">도미노피자</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 25~35분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+</div></div>
+<!-- 단맛 -->
 <div id="tp-sweet" class="tp" style="display:none">
-<div style="padding:16px 16px 8px;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:space-between"><div><em style="color:#2AC1BC;font-style:normal">단맛</em> 충전이 필요할 때</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
-<div style="padding:0 16px 16px">
-<div class="bp-shop"><div class="bp-shop-img">🍧</div><div class="bp-shop-bd"><div class="bp-shop-nm">설빙 강남역점</div><div class="bp-shop-meta">⭐ 4.4 (2,100) · 최소주문 12,000원</div><div class="bp-shop-meta">🛵 20~30분 · 무료배달</div><div class="bp-shop-cpn">⚡ 2,000원 즉시할인</div></div></div>
+<div style="padding:16px 16px 4px;display:flex;align-items:center;justify-content:space-between"><div style="font-size:16px;font-weight:700"><span style="color:#2AC1BC">단맛</span> 충전이 필요할 때</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
+<div style="padding:4px 16px 8px;display:flex;align-items:center;justify-content:space-between"><span style="font-size:12px;color:#aaa">내 주변 단맛 가게 2곳</span><button style="background:none;border:1px solid #ddd;border-radius:16px;padding:4px 12px;font-size:11px;color:#888;cursor:pointer">🔄 새로고침</button></div>
+<div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍧</div><div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:15px;font-weight:700">설빙</span><span style="font-size:10px;background:#FFE8E8;color:#E53935;padding:2px 6px;border-radius:4px;font-weight:700">1,000원 할인</span></div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 20~30분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🧇</div><div style="flex:1"><div style="font-size:15px;font-weight:700">카페디저트</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 15~25분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
 </div></div>
+<!-- 건강한맛 -->
 <div id="tp-healthy" class="tp" style="display:none">
-<div style="padding:16px 16px 8px;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:space-between"><div><em style="color:#2AC1BC;font-style:normal">건강한맛</em>으로 밸런스 맞추기</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
-<div style="padding:0 16px 16px">
-<div class="bp-shop"><div class="bp-shop-img">🥗</div><div class="bp-shop-bd"><div class="bp-shop-nm">서브웨이 강남점</div><div class="bp-shop-meta">⭐ 4.4 (1,500) · 최소주문 8,000원</div><div class="bp-shop-meta">🛵 15~25분 · 무료배달</div></div></div>
+<div style="padding:16px 16px 4px;display:flex;align-items:center;justify-content:space-between"><div style="font-size:16px;font-weight:700"><span style="color:#2AC1BC">건강한맛</span>으로 밸런스 맞추기</div><span style="font-size:12px;color:#2AC1BC;background:#F0FAFA;padding:4px 10px;border-radius:12px;font-weight:600">📍 강남구</span></div>
+<div style="padding:4px 16px 8px;display:flex;align-items:center;justify-content:space-between"><span style="font-size:12px;color:#aaa">내 주변 건강 가게 2곳</span><button style="background:none;border:1px solid #ddd;border-radius:16px;padding:4px 12px;font-size:11px;color:#888;cursor:pointer">🔄 새로고침</button></div>
+<div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🥗</div><div style="flex:1"><div style="font-size:15px;font-weight:700">서브웨이</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 15~25분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
+<div style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff;border:1px solid #f0f0f0;border-radius:14px"><div style="width:48px;height:48px;border-radius:12px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:22px">🍲</div><div style="flex:1"><div style="font-size:15px;font-weight:700">본죽</div><div style="font-size:12px;color:#888;margin-top:2px">가장 가까운 지점 · 20~30분</div></div><span style="color:#ccc;font-size:14px">▼</span></div>
 </div></div>
 <!-- 친구에게 먹을복 공유하기 (W1~2) -->
 <div style="margin:0 16px 12px;padding:12px 14px;background:#F0FAFA;border-radius:12px;display:flex;align-items:center;justify-content:space-between">
