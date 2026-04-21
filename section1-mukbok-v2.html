@@ -373,7 +373,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 .pin-save{background:#FF6B00;color:#fff;border:none}
 .pin-cancel{background:#fff;border:1px solid #ddd;color:#888}
 </style>
-<style>.tt::-webkit-scrollbar{display:none} .tp [style*="overflow-x:auto"]::-webkit-scrollbar{display:none}</style>
+<style>.tt::-webkit-scrollbar{display:none} [style*="overflow-x:auto"]::-webkit-scrollbar{display:none} [style*="overflow-x:auto"]{scrollbar-width:none;-ms-overflow-style:none}</style>
 </head>
 <div class="frame">
 <!-- 테마 탭 -->
@@ -525,30 +525,46 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 <div style="padding:0 16px 14px"><button style="width:100%;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;font-size:13px;font-weight:600;color:#555;cursor:pointer">치킨 픽업 더보기 ›</button></div>
 </div>
 </div>
-<!-- 놓치면 아까운 할인 가게 (W1~2) -->
-<div style="padding:24px 16px 8px"><div style="font-size:20px;font-weight:800">놓치면 아까운 할인 가게</div><div style="font-size:13px;color:#888;margin-top:4px">지금 바로 할인 중인 가게만 모아봤어요</div></div>
-<div style="display:flex;gap:6px;padding:8px 16px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none" class="tt">
-<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;background:#1a1a1a;color:#fff;white-space:nowrap;cursor:pointer">🌶️ 매운맛</div>
-<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer">🧂 짠맛</div>
-<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer">🍰 단맛</div>
-<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer">🥗 건강한맛</div>
+<!-- 우리 동네 할인 가게 (W1~2) -->
+<div style="padding:24px 16px 8px"><div style="font-size:20px;font-weight:800">우리 동네 할인 가게</div><div style="font-size:13px;color:#888;margin-top:4px">지금 바로 할인 중인 가게만 모아봤어요</div></div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;padding:8px 16px">
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;background:#1a1a1a;color:#fff;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🏠 전체</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🍗 치킨</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">☕ 카페·디저트</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🥡 중식</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🍣 돈까스·회</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🍕 피자</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🍔 패스트푸드</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🍲 찜</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🌶️ 매운맛</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🧂 짠맛</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🍰 단맛</div>
+<div style="padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid #eee;background:#fff;color:#888;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px">🥗 건강한맛</div>
 </div>
 <div style="padding:8px 16px 0;display:grid;grid-template-columns:1fr 1fr;gap:10px">
 <div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
-<div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🌶️<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 3,000원 즉시할인</div></div>
-<div style="padding:10px"><div style="font-size:14px;font-weight:700">엽기떡볶이 강남점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.7 · <span style="color:#2AC1BC">배달팁무료</span></div></div>
-</div>
-<div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
-<div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🔥<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 15% 즉시할인</div></div>
-<div style="padding:10px"><div style="font-size:14px;font-weight:700">마라탕후루 서초점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.5 · 1,500원</div></div>
-</div>
-<div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
 <div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🍜<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 3,000원 즉시할인</div></div>
-<div style="padding:10px"><div style="font-size:14px;font-weight:700">신전떡볶이 역삼점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.5 · <span style="color:#2AC1BC">배달팁무료</span></div></div>
+<div style="padding:10px"><div style="font-size:14px;font-weight:700">영카츠 강남점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.5 · <span style="color:#2AC1BC">배달팁무료</span> 700원</div></div>
 </div>
 <div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
 <div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🍲<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 15% 즉시할인</div></div>
-<div style="padding:10px"><div style="font-size:14px;font-weight:700">쫄볶이네 강남점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.3 · <span style="color:#2AC1BC">배달팁무료</span> 900원</div></div>
+<div style="padding:10px"><div style="font-size:14px;font-weight:700">88노가리 역삼점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.9 · 1,100원</div></div>
+</div>
+<div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
+<div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🥩<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 3,000원 즉시할인</div></div>
+<div style="padding:10px"><div style="font-size:14px;font-weight:700">함평육회 강남점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.2 · <span style="color:#2AC1BC">배달팁무료</span> 1,800원</div></div>
+</div>
+<div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
+<div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🍝<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 15% 즉시할인</div></div>
+<div style="padding:10px"><div style="font-size:14px;font-weight:700">석촌칼국수 본점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.5 · <span style="color:#2AC1BC">배달팁무료</span> 900원</div></div>
+</div>
+<div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
+<div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🌶️<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 3,000원 즉시할인</div></div>
+<div style="padding:10px"><div style="font-size:14px;font-weight:700">춘리마라탕 강남점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.7 · <span style="color:#2AC1BC">배달팁무료</span> 900원</div></div>
+</div>
+<div style="border-radius:14px;overflow:hidden;background:#fff;border:1px solid #f0f0f0">
+<div style="height:120px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative">🍔<div style="position:absolute;bottom:8px;left:8px;background:#5B2EFF;color:#fff;padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700">⚡ 15% 즉시할인</div></div>
+<div style="padding:10px"><div style="font-size:14px;font-weight:700">다운타우너 역삼점</div><div style="font-size:12px;color:#888;margin-top:2px">⭐ 4.1 · <span style="color:#2AC1BC">배달팁무료</span> 1,400원</div></div>
 </div>
 </div>
 <div style="padding:12px 16px 20px"><button style="width:100%;padding:14px;background:#fff;border:1px solid #ddd;border-radius:12px;font-size:14px;font-weight:600;color:#555;cursor:pointer">더 많은 가게 보러 가기 ›</button></div>
