@@ -373,6 +373,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 .pin-save{background:#FF6B00;color:#fff;border:none}
 .pin-cancel{background:#fff;border:1px solid #ddd;color:#888}
 </style>
+<style>.tt::-webkit-scrollbar{display:none}</style>
 </head>
 <div class="frame">
 <!-- 테마 탭 -->
@@ -430,7 +431,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#f5f5
 <div style="font-size:11px;color:#aaa;margin-top:10px;cursor:pointer">유의사항 ∨</div>
 </div>
 <!-- 맛별 가게 추천 -->
-<div style="padding:16px 16px 0;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+<div style="padding:16px 16px 0;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none">
 <div class="ttb" onclick="switchTaste('spicy',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #2AC1BC;background:#2AC1BC;cursor:pointer;white-space:nowrap;color:#fff;position:relative">🌶️ 매운맛<span style="position:absolute;top:-6px;right:-4px;font-size:9px;background:#FF6B00;color:#fff;padding:1px 4px;border-radius:6px;font-weight:700">MY</span></div>
 <div class="ttb" onclick="switchTaste('salty',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🧂 짠맛</div>
 <div class="ttb" onclick="switchTaste('sweet',this)" style="padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #eee;background:#fff;cursor:pointer;white-space:nowrap;color:#888">🍰 단맛</div>
